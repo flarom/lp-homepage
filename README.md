@@ -1,2 +1,2 @@
 # lp-homepage
-html/css study creating a home page for Lorem Picsum
+html/css study creating a home page for [Lorem Picsum](https://picsum.photos/)
