@@ -1,0 +1,77 @@
+/* Animação de fade-in (desaparecendo para aparecendo) */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animação de deslizar de cima para baixo */
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animação de zoom (ampliando o elemento) */
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Animação de pulsar (fazendo o elemento crescer e encolher) */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Aplicando nas sessões */
+  .animation {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .animation-slide {
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  .animation-zoom {
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  .animation-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  .animation:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .animation:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .animation:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  

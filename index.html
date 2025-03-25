@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Picsum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="form-style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#default" class="logo">Lorem Picsum</a>
+        <nav id="menu" class="header-right">
+            <a href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+        <button onclick="toggleMenu()" class="header-menu-button">
+            <span class="large-icon">menu</span>
+        </button>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+    <button onclick="topFunction()" class="topButton" id="topButton"><span class="large-icon">arrow_upward</span></button>
+
+    <script>
+        let mybutton = document.getElementById("topButton");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        } 
+    </script>
+
+    <div class="document hollow blurred-bg-container animation">
+        <img class="blurred-bg" src="https://picsum.photos/1200/600" alt="">
+        <div class="row-container">
+            <div>
+                <h1>O Lorem Ipsum para imagens</h1>
+                <p>Placeholders estilosos facieis de usar</p>
+                <br>
+                <button class="awesome">Comece de graça agora!</button>
+            </div>
+            <div>
+                <img src="https://picsum.photos/1200/600" style="max-width: 600px;" alt="" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <div class="document hollow animation-slide">
+        <marquee behavior="alternate" direction="left" style="border-radius: 15px;">
+            <a href="https://picsum.photos/id/128/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/128/250/150" alt=""></a>
+            <a href="https://picsum.photos/id/492/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/492/250/150" alt=""></a>
+            <a href="https://picsum.photos/id/392/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/392/250/150" alt=""></a>
+            <a href="https://picsum.photos/id/205/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/205/250/150" alt=""></a>
+            <a href="https://picsum.photos/id/189/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/189/250/150" alt=""></a>
+            <a href="https://picsum.photos/id/443/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/443/250/150" alt=""></a>
+            <a href="https://picsum.photos/id/129/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/129/250/150" alt=""></a>
+            <a href="https://picsum.photos/id/402/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/402/250/150" alt=""></a>
+            <a href="https://picsum.photos/id/100/250/150"><img loading="lazy"
+                    src="https://picsum.photos/id/100/250/150" alt=""></a>
+        </marquee>
+    </div>
+
+    <div class="document">
+        <div class="tiny-row-container">
+            <div class="document fill animation-zoom">
+                <img src="https://picsum.photos/id/500/800/400" alt="" style="width: 100%;">
+                <h3>Imagem especifica</h3>
+                <p>Use uma imagem em especifico usando <code>/id/{n}</code>.</p>
+                <br>
+                <a href="https://picsum.photos/id/500/800/400"><code>https://picsum.photos/id/500/800/400</code></a>
+            </div>
+            <div class="document fill animation-zoom">
+                <img src="https://picsum.photos/id/900/800/400?grayscale" alt="" style="width: 100%;">
+                <h3>Preto e branco</h3>
+                <p>Use uma imagem em preto e branco usando <code>?grayscale</code> no final da URL.</p>
+                <br>
+                <a href="https://picsum.photos/800/400?grayscale"><code>https://picsum.photos/800/400?grayscale</code></a>
+            </div>
+            <div class="document fill animation-zoom">
+                <img src="https://picsum.photos/id/70/800/400?blur=10" alt="" style="width: 100%;">
+                <h3>Blur</h3>
+                <p>Use uma imagem borrada usando <code>?blur=<i>n</i></code> no final da URL.</p>
+                <br>
+                <a href="https://picsum.photos/800/400?blur"><code>https://picsum.photos/800/400?blur</code></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="document-group">
+        <div class="document fill animation-zoom">
+            <h2>Quem somos</h2>
+            <p>Provemos imagens sem direitos autorais para uso temporario no desenvolvimento de websites.</p>
+            <h3>Para onde vamos</h3>
+            <p>objetivo da empresa</p>
+        </div>
+        <div class="document fill animation-zoom">
+            <div class="tiny-row-container" style="margin-bottom: 10px;">
+                <img class="profile" src="https://avatars.githubusercontent.com/u/151688223?v=4" alt="">
+                <div>
+                    <h2>"Bagual."</h2>
+                    <p>Guilherme Mathiack</p>
+                </div>
+            </div>
+
+            <div class="tiny-row-container" style="margin-bottom: 10px;">
+                <img class="profile" src="https://avatars.githubusercontent.com/u/151688352?v=4" alt="">
+                <div>
+                    <h2>"Absolute Cinema"</h2>
+                    <p>Wesley Lucas Moreira</p>
+                </div>
+            </div>
+
+            <div class="tiny-row-container" style="margin-bottom: 10px;">
+                <img class="profile" src="https://avatars.githubusercontent.com/u/133614580?v=4" alt="">
+                <div>
+                    <h2>""</h2>
+                    <p>Felipe Eduardo Monari</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="document hollow">
+        <h2>Fale conosco</h2>
+        <form action="">
+            <input type="text" name="name" id="name" required placeholder="Nome">
+            <input type="email" name="email" id="email" required placeholder="E-mail">
+            <textarea name="message" id="message" placeholder="Mensagem" style="resize: none; height: 200px;"
+                required></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+
+    <footer>
+        <div class="tiny-row-container" style="align-items: start;">
+            <table>
+                <tr>
+                    <td><a href="index.html">
+                            <h3>Lorem Picsum</h3>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Copyright 2025 Lorem Picsum</p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Follow us</th>
+                    <th>Navigate</th>
+                </tr>
+                <tr>
+                    <td><a class="dinamic" href="">Social 1</a></td>
+                    <td><a class="dinamic" href="">Local anchor 1</a></td>
+                </tr>
+                <tr>
+                    <td><a class="dinamic" href="">Social 2</a></td>
+                    <td><a class="dinamic" href="">Local anchor 2</a></td>
+                </tr>
+                <tr>
+                    <td><a class="dinamic" href="">Social 3</a></td>
+                    <td><a class="dinamic" href="">Local anchor 3</a></td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+
+</html>
